@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Farzana Stream</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f0f14;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Top bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #14141c;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ff4d6d;
+}
+
+.navbar button {
+  background: #ff4d6d;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 50px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.hero video {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(255,77,109,0.4);
+}
+
+/* Movie info card */
+.info-card {
+  margin: 3px 2px;
+  background: linear-gradient(135deg, #1c1c26, #121218);
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-left h3 {
+  margin: 0;
+}
+
+.tags span {
+  background: #ff4d6d;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.info-card button {
+  background: transparent;
+  border: 2px solid #ff4d6d;
+  color: #ff4d6d;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+  font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">Farzana Stream</div>
+  <button>My Playlist</button>
+</div>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Now Playing 🎧</h1>
+    <p>
+      This song brings back my whole childhood.  
+      Some memories never fade, they just get louder.
+    </p>
+  </div>
+
+  <video controls>
+    <source src="./VID-20200724-WA0019.mp4" type="video/mp4">
+  </video>
+</section>
+
+<div class="info-card">
+  <div class="info-left">
+    <h3>Favorite Memory Track</h3>
+    <div class="tags">
+      <span>Nostalgia</span>
+      <span>Music</span>
+      <span>Personal</span>
+    </div>
+  </div>
+  <button>❤️ Add to Favorites</button>
+</div>
+
+<footer>
+  Made with love by Farzana
+</footer>
+
+</body>
+</html>
